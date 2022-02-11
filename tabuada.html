@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var multi = parseInt(prompt("Digite o valor a ser multiplicado:"));
+
+	function tabuada() {
+		for (multiplicador = 1; multiplicador <=10; multiplicador++) {
+			mostra(multi + "x" + multiplicador + " = " + (multi * multiplicador));
+		}
+	}
+	tabuada();
+
+</script>

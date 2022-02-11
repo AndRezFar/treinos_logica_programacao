@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLionha() {
+		document.write("<br>");
+	}
+	function mostra(frase) {
+		document.write(frase);
+		pulaLionha();
+	}
+
+	alert("Clica no OK para o jogo começar!")
+	alert("Regras: O jogador tem 3 chances para acertar o número.")
+
+	var numeroPensado = Math.round(Math.random()*10);
+	
+	for(contador = 1; contador <= 3; contador++) {
+		var chute = parseInt(prompt("Digite seu chute!"));
+		if (chute === numeroPensado) {
+			mostra("Você acertou! O número acertado era " + numeroPensado + ".<br>");
+			break;
+		} else {
+			alert("Você errou, o número era " + numeroPensado);
+			numeroPensado = Math.round(Math.random()*10);
+		}
+	}
+	mostra("Termino do jogo, aperte F5 para recomeçar.")
+
+</script>

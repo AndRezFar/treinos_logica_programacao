@@ -1,0 +1,272 @@
+<meta charset="utf-8">
+
+<script>
+
+	function atividades(numeroDaAtividade) {
+		document.write("<h3>Atividade " + numeroDaAtividade + ":</h3>")
+	}
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	atividades(1);
+
+	var n = 1;
+
+	document.write("O resultado da fórmula é: " + n * (10/20));
+	document.write("<br>");
+
+	atividades(2);
+
+	var s = 8;
+
+    document.write(s + " vezes 1 é " + s * 1+ "<br>");
+    document.write(s + " vezes 2 é " + s * 2+ "<br>");
+    document.write(s + " vezes 3 é " + s * 3+ "<br>");
+    document.write(s + " vezes 4 é " + s * 4+ "<br>");
+    document.write(s + " vezes 5 é " + s * 5+ "<br>");
+    document.write(s + " vezes 6 é " + s * 6+ "<br>");
+    document.write(s + " vezes 7 é " + s * 7+ "<br>");
+    document.write(s + " vezes 8 é " + s * 8+ "<br>");
+    document.write(s + " vezes 9 é " + s * 9+ "<br>");
+    document.write(s + " vezes 10 é " + s * 10+ "<br>");
+
+	atividades(3);
+
+	var idadeLinda = 12;
+	var idadeGuaraciara = 15;
+	var idadePerola = 13;
+	var media = (idadeLinda + idadeGuaraciara + idadePerola)/3;
+
+    document.write(Math.round(media));
+
+	atividades(4);
+
+	document.write("Álcool ou Gasolina?");
+	document.write("<br>");
+
+	var tanque = 40;
+	var caminhoComGasolina = 480;
+	var consumoDeGasolina = caminhoComGasolina/tanque;
+	document.write("O consumo da gasolina foi: " + consumoDeGasolina);
+	document.write("<br>");
+
+	var caminhoComAlcool = 300;
+	var consumoDeAlcool = caminhoComAlcool/tanque;
+	document.write("O consumo de álcool foi: " + consumoDeAlcool);
+
+	atividades(5);
+
+	var minhaIdade = 21;
+	var idadeIrmao = 25;
+
+	mostra("Nossa diferença de idade é " + (idadeIrmao - minhaIdade) + " anos");
+
+	atividades(6);
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var anoAtual = 2021;
+	var mediaGeracao = 28;
+	var anoDescobrimento = 1500;
+
+	var quantidadeDeGeracoes = Math.round((anoAtual - anoDescobrimento)/mediaGeracao);
+
+	mostra(quantidadeDeGeracoes);
+
+	atividades(7);
+
+	var ano = 2019;
+	mostra("Eu nasci em : " + (ano - 25));
+	mostra("Adriano nasceu em : " + (ano - 26));
+	mostra("Paulo nasceu em : " + (ano - 32));
+
+	atividades(8);
+
+    //var idade = parseInt(prompt("Qual é sua idade?"));
+    //var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+    function resultado(a, b) {
+    	if (a >= 18 && b == "s") {
+    		mostra("Pode Dirigir.");
+    	} else {
+    		mostra("Não pode dirigir.");
+    	}
+    }
+
+    //resultado(idade, temCarteira);
+
+    atividades(9);
+
+    function sorteia(n) {
+    	var x = Math.round(Math.random() * n)
+    	return x
+    }
+
+    var numeroPensado = sorteia(10);
+    //console.log(numeroPensado);
+
+    //var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    function resultado(a){
+    	if (a == numeroPensado) {
+    		mostra("você acertou! O número era " + numeroPensado);
+    	} else {
+    		if (a < numeroPensado) {
+    			mostra("Você errou, O número era maior do que " + a);
+    		} else {
+    			mostra("Você errou, o número era menor do que " + a)
+    		}
+    	}
+    }
+    //resultado(chute);
+
+    atividades(10);
+
+    var numero = 2;
+/*    while (numero <= 100) {
+    	mostra(numero);
+    	numero = numero + 2;
+
+    }*/
+
+    mostra("FIM");
+
+    atividades(11);
+
+    var repetir = 30;
+
+	/*while (repetir <= 40) {
+ 		mostra(repetir);
+ 		function repeticao(a) {
+ 			if (repetir == 32) {
+ 				repetir = repetir + 1;
+ 			} if (repetir == 36) {
+ 				repetir = repetir + 2;
+ 			} else {
+ 				repetir = repetir + 1;
+ 			}
+ 		}
+ 		repeticao(repetir);
+ 	}*/
+    mostra("FIM");
+
+    atividades(12);
+
+    var decresente = 20
+
+/*    while (decresente >= 0) {
+    	mostra(decresente);
+    	decresente = decresente - 1;
+    }
+*/
+    mostra("FIM")
+
+    atividades(13);
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    //var loginInformado = prompt("Informe seu login");
+    //var senhaInformada = prompt("Informe sua senha");
+
+	var tentativaAtual = 1;
+	var tentativaMaxima = 3;
+
+	/*while (tentativaAtual <= tentativaMaxima) {
+		if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+       		mostra("Bem-vindo ao sistema " + loginInformado);
+       		tentativaAtual = 4;
+    	} if (tentativaAtual == 3) {
+    		alert("Usuário Bloqueado!")
+    	} else {
+        	alert("Login inválido. Tente novamente");
+        	loginInformado = prompt("Informe seu login");
+	    	senhaInformada = prompt("Informe sua senha");
+	    	tentativaAtual = tentativaAtual + 1;
+    	}
+	}*/
+
+	atividades(14);
+
+	var i = 0;
+
+	while (i < 10) {
+		mostra("O Resultado é " + (2 * i));
+		i++;
+	}
+
+	atividades(15);
+
+	/*var totalDeEventos = parseInt(prompt("Informe o total de eventos"));
+
+    var totalGastoComEventos = 0;
+
+    for(contador = 1; contador <= totalDeEventos; contador++) {
+	    var gasto = parseFloat(prompt("Informe total gasto com evento"));
+        totalGastoComEventos = totalGastoComEventos + gasto;
+        
+    }
+
+    var media = totalGastoComEventos / totalDeEventos;
+
+    mostra("A média de gastos é " + media);*/
+
+    atividades(16);
+
+    /*var jogadores = ["Saladino", "Cage", "Xur", "Rayson"];
+
+    for( var i = 0; i < jogadores.length; i++) {
+    alert(jogadores[i]);
+	}*/
+
+	atividades(17);
+
+	/*var letras = ['A', 'B', 'C', 'D'];
+
+	for( var i = 0; i < letras.length; i++ ) {
+    	alert(letras[i]);
+	}*/
+
+	atividades(18);
+    
+    /*function lista () {
+    	var quantidade = parseInt(prompt("Quantos ingredientes você vai adicionar?"));
+	    var ingredientes = [];
+    	var contador = 1;
+	    while(contador <= quantidade) {
+	        
+	        var ingrediente = prompt("Informe o ingrediente " + contador);
+    		var igual = false;
+    		
+    		for(posicao = 0; posicao < ingredientes.length; posicao++){
+    			if(ingredientes[posicao] == ingrediente){
+    				igual = true;
+    				alert("O item já está incluso!");
+    				break;
+    			}
+    		}
+	        
+	        if(igual == false) {
+		        ingredientes.push(ingrediente);
+		        contador++;
+	    	}
+	    }
+	    console.log(ingredientes);
+	    return ingredientes.value;
+	}
+	lista();*/
+</script>
